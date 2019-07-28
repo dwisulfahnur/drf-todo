@@ -13,7 +13,7 @@ class ToDoViewSet(viewsets.ModelViewSet):
         return ToDo.objects.all()
 
     @action(detail=True, methods=['post'])
-    def set_as_complete(self, requset, pk=None):
+    def set_as_complete(self, request, pk=None):
         todo = self.get_object()
         todo.completed_at = timezone.now()
 
