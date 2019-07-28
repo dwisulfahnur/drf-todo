@@ -8,6 +8,8 @@ from .models import ToDo
 
 class ToDoViewSet(viewsets.ModelViewSet):
     serializer_class = ToDoSerializer
+    page_size_query_param = 'page_size'
+    max_page_size = 100
 
     def get_queryset(self):
         return ToDo.objects.all()
