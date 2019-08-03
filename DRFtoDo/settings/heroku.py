@@ -6,7 +6,7 @@ DEBUG = False
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')])
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ('DATABASE_URL')),
+    'default': dj_database_url.config(default=config('DATABASE_URL')),
 }
 
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
