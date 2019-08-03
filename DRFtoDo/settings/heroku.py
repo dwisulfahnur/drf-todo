@@ -17,3 +17,6 @@ DATABASES = {
 # EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
 
 REST_FRAMEWORK['DEFAULT_RENDERER_CLASSES'] = ['rest_framework.renderers.JSONRenderer', ]
+
+# Cors Config
+CORS_ORIGIN_WHITELIST = config('CORS_ORIGIN_WHITELIST', cast=lambda v: [s.strip() for s in v.split(',')])
