@@ -6,7 +6,7 @@ djangorestframework-simplejwt==4.3.0
 djangorestframework-stubs==1.0.0
 gunicorn==19.9.0
 mysqlclient==1.4.2.post1
-PyJWT==1.7.1
+PyJWT==2.4.0
 python-decouple==3.1
 pytz==2019.1
 sqlparse==0.3.0
